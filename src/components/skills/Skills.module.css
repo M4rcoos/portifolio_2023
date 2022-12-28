@@ -1,0 +1,25 @@
+.sectionCard > .card > p{
+    font-family: 'Arial';
+    color: var(--white);
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+
+.sectionCard > .card{
+    background-color:var(--gray-200);
+    max-width: 200;
+    max-height: 300;
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem
+
+}
+.sectionCard > .card:hover{
+    transform: translateY(-0.5rem);
+    transition: 0.25s ease-out;
+}

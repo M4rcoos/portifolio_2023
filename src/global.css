@@ -1,0 +1,19 @@
+:root{
+  
+    --gray-800: #1B1a17;
+    --gray-200: #1f1e1b;
+
+    --orange-700: #a35709;
+    --orange-300: #ff8303;
+    --white: #f0e3ca;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   scroll-behavior: smooth;
+    
+}
+body{
+    background-color: var(--gray-800);
+}

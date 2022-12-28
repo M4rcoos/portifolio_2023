@@ -1,0 +1,43 @@
+.header{
+color: var(--white);
+display: flex;
+align-items:center ;
+padding: 1.25rem 7.813rem;
+font-family: 'Inconsolata';
+justify-content: space-between;
+}
+.header > .button {
+    display: flex;
+    gap:8rem;
+    list-style-type: none;
+
+}
+.header > .button > li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button > li a:hover{
+ color: var(--orange-300);
+ transition: 0.7s;
+}
+.button > li a:focus{
+ color: var(--orange-300);
+
+}
+.header > .logo{
+    display: flex;
+    
+}
+.header > .logo h2{
+    font-weight: bold;
+    font-size: 32px;
+}
+.header > .logo> h2::first-letter{
+    color: var(--orange-300);
+   
+
+}
+

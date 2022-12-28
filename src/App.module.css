@@ -1,0 +1,80 @@
+.avatar{
+    background-image: url('../public/assets/backgroundAvatar.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+    max-height: 564px;
+    max-width: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding-top:150px;
+
+}
+
+main > .sectionAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 95px 114px 120px 122px;
+    gap:8rem
+
+
+}
+main > .sectionAbout > .aboutWork{
+    max-width: 448px;
+    font-family: 'Inconsolata';
+}
+main > .sectionAbout > .aboutWork h1{
+    font-weight: 900;
+    color: var(--orange-300
+    );
+    font-size: 3rem;
+    line-height: 4rem;
+}
+main > .sectionAbout > .aboutWork h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: var(--white);
+
+}
+main > .sectionAbout > .aboutWork p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--white);
+    line-height:1.5rem ;
+}
+main > .aboutMe {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-200);
+    gap:2rem;
+    padding: 4rem 12.563rem;
+}
+main > .aboutMe p{
+    font-family: 'Inconsolata';
+    max-width: 904px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--white);
+}
+.titleCard{
+    font-family: 'Inconsolata';
+    color: var(--orange-300);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 3rem;
+
+}
+.cardSkill{
+     
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    gap:1rem
+}
