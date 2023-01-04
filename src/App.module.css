@@ -78,3 +78,6 @@ main > .aboutMe p{
     padding: 4rem;
     gap:1rem
 }
+main > .projects{
+    padding: 1rem 5rem;
+}

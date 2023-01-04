@@ -1,0 +1,44 @@
+.cardProject{
+    background-color: var(--gray-200);
+    max-height: 5000px;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.cardProject > h3{
+    font-family: Arial;
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 1rem;
+}
+.cardProject > p{
+    font-family: "Inconsolata";
+    color: var(--white);
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 2rem;
+    line-height: 150%;
+}
+
+
+.cardProject > p > i{
+    font-family: "Inconsolata";
+    color: var(--orange-300);
+    text-align: left;
+    font-size: 16px;
+    padding: 2rem 0;
+}
+ .cardProject > a {
+  padding: 0.5rem 0.75rem;
+  background-color: var(--orange-700);
+  color: var(--white);
+  list-style-type: none;
+  border-radius: 10px;
+  text-decoration: none;
+ }
+ .cardProject > a:hover{
+  background-color: var(--orange-300);
+  transition: 0.7s;
+ }

@@ -14,6 +14,7 @@ import iconReact from '../public/assets/iconReact.svg'
 
 import style from './App.module.css'
 import './global.css'
+import { Projects } from './components/projects/Project'
 
 function App() {
 
@@ -45,6 +46,10 @@ function App() {
     <Skills img={iconNode} title="NodeJs"/>
     <Skills img={iconReact} title="React"/>
     </section>
+    <div className={style.projects}>
+
+      <Projects/>
+    </div>
       </main>
     </div>
   ) 
