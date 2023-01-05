@@ -1,7 +1,8 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import style from './Project.module.css'
+import style from './Projeto.module.css'
 import { useEffect,useState } from 'react';
+
 
 
   export function Projects(this:any, target: Object, propertyName: string){
