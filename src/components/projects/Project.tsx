@@ -44,14 +44,6 @@ import { useEffect,useState } from 'react';
         carregaRepositorios();
       }, []);
 
-  function descriptiontest(date:data){
-  if(date.description==null){
-    return(
-      <h3>não existe descrição nesse projeto</h3>
-    )
-  }
-  }
-
     return (
         <>
         <Carousel
@@ -74,13 +66,13 @@ import { useEffect,useState } from 'react';
      
         {
           repository.map(repository=>(
-            <div className={style.cardProject}>
+            <div className={style.cardProject} id='Projects'>
               <h3 key={repository.id}>{repository.name}</h3>
               <p>{}</p>
-              <p>Tecnologia mais ultilizada: <br /><i>
+              <p>most used technology: <br /><i>
               {repository.language}
                 </i></p>
-              <a href={repository.html_url} target='_blank'>Saiba Mais</a>
+              <a href={repository.html_url} target='_blank'>know more</a>
             </div>
           ))
         }

@@ -1,7 +1,7 @@
 import style from './Header.module.css'
 
 export function Header (){
-    const logo = "</Onmarcos"
+    const logo = "</Marcos"
     const lastlogo= '>'
     return(
        <>

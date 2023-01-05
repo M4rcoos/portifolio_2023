@@ -8,9 +8,9 @@ type Props ={
 }
 export function Skills ({title, img}:Props){
     return(
-       <section className={style.sectionCard}>
+       <section className={style.sectionCard} id='skill'>
         
-        <div className={style.card}>
+        <div className={style.card} >
             <img src={img} alt={`icone da tecnologia ${title}`} />
             <p>{title}</p>
         </div>

@@ -81,3 +81,70 @@ main > .aboutMe p{
 main > .projects{
     padding: 1rem 5rem;
 }
+.responsive{
+    display: none;
+}
+body{
+    background-color: var(--gray-800);
+}
+@media (max-width:1200px) {
+    .responsive{
+        display: block;
+    }
+    .construction{
+        background-image: url("/public/assets/UI\ Developer.gif");
+        height: 100vh;
+        width: 100vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
+    .responsive{
+        position: relative;
+    }
+    .responsive > h2 {
+    font-family: 'Inconsolata';
+    color: var(--orange-700);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    position: absolute;
+    top: 35rem;
+    }
+    
+    main{
+        display: none;
+    }
+    body{
+        background-color: #000;
+    }
+}
+@media (max-width:500px) {
+    .construction{
+        background-image: url("/public/assets/gifdev.gif");
+        height: 100vh;
+        width: 100vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+       
+    }
+    .responsive{
+        position: relative;
+    }
+    .responsive > h2 {
+    font-family: 'Inconsolata';
+    color: var(--orange-700);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    position: absolute;
+    top: 20rem;
+    }
+    
+    main{
+        display: none;
+    }
+    body{
+        background-color: #000;
+    }
+}
