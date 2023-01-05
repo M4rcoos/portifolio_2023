@@ -11,11 +11,10 @@ import iconJavaScript from "../public/assets/iconJavaScript.svg";
 import iconGit from "../public/assets/iconGit.svg";
 import iconCss from "../public/assets/iconCss.svg";
 import iconReact from "../public/assets/iconReact.svg";
-import gif from '../public/assets/UI Developer.gif'
 
 import style from "./App.module.css";
 import "./global.css";
-import { Projects } from "./components/projects/Project";
+import { Projects } from "./components/works/Project";
 function App() {
   return (
     <div className="App">
