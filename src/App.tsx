@@ -11,6 +11,7 @@ import iconJavaScript from "../public/assets/iconJavaScript.svg";
 import iconGit from "../public/assets/iconGit.svg";
 import iconCss from "../public/assets/iconCss.svg";
 import iconReact from "../public/assets/iconReact.svg";
+import iconReactNative from "../public/assets/native.png";
 
 import style from "./App.module.css";
 import "./global.css";
@@ -32,9 +33,9 @@ function App() {
             <h1>Marcos vinicius</h1>
             <h3>Frontend Developer</h3>
             <p>
-              Frontend developer looking for ideas and projects for himself and
-              others, focused on technologies: react js, react native,
-              typescript.
+              Sou desenvolvedor frontend em busca de ideias e projetos para si e para
+               empresas ou terceiros, focado nas tecnologias: react js, react native,
+               typescript, node e Asp.net
             </p>
           </div>
           <div className={style.avatar}>
@@ -44,10 +45,9 @@ function App() {
         <div className={style.aboutMe} id="about">
           <img src={icon} alt="icone laranja " />
           <p >
-            I like the technology area since I was little, and I'm having the
-            opportunity to study and show my ability developing web interfaces
-            on a daily basis, my focus is to constantly improve myself aiming at
-            corporate and professional growth.
+           Desenvolvedor focado em criar aplicações Web e mobile com desing agradável sempre pensando no usuário final.
+           minha maior motivação é desenvolver algo que seja útil no dia a dia das pessoas. 
+           Também tenho uma sólida experiencia com criações de Api com Node js.
           </p>
         </div>
         <h3 className={style.titleCard}>My Skills</h3>
@@ -58,9 +58,10 @@ function App() {
           <Skills img={iconGit} title="Git" />
           <Skills img={iconNode} title="NodeJs" />
           <Skills img={iconReact} title="React" />
+          <Skills img={iconReactNative} title="React Native" />
         </section>
         <div className={style.projects}>
-          <h3 className={style.titleCard}>My Works</h3>
+          <h3 className={style.titleCard}>Meus trabalhos</h3>
           <Projects />
         </div>
         <Footer />

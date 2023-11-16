@@ -1,0 +1,17 @@
+
+
+.sectionCard > .card{
+  background-color:var(--gray-200);
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2rem
+
+}
+.sectionCard > .card >img {
+ max-height: 200px;
+ max-width: 100%;
+}

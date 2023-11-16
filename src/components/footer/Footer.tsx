@@ -15,11 +15,11 @@ export function Footer() {
             <h2> {lastlogo} </h2>
           </div>
           <p className={style.description}>
-          If you like my work and want to get in touch with me, don't hesitate to send me a message.
+          Se você gosta do meu trabalho e deseja entrar em contato comigo, não hesite em me enviar uma mensagem.
           </p>
         </div>
           <div className={style.contact} id='contact'>
-            <h3>Contacts</h3>
+            <h3>Contatos</h3>
             <div className={style.socialMidia}>
                 <div className={style.section}>
                     <a href="mailto:souza.marcosv2@gmail.com?subject=assunto"  target='_blank'>

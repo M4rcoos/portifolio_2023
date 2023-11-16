@@ -5,6 +5,10 @@
     border-radius: 10px;
     padding: 2rem 1rem;
     margin-top: 3rem;
+  
+}
+.description{
+    max-height: 30px;
 }
 
 .cardProject > h3{
@@ -31,7 +35,7 @@
     font-size: 16px;
     padding: 2rem 0;
 }
- .cardProject > a {
+ .cardProject > .content > a {
   padding: 0.5rem 0.75rem;
   background-color: var(--orange-700);
   color: var(--white);
@@ -39,7 +43,20 @@
   border-radius: 10px;
   text-decoration: none;
  }
- .cardProject > a:hover{
+ .cardProject > .content > a:hover{
   background-color: var(--orange-300);
   transition: 0.7s;
  }
+
+.projects{
+    padding: 1rem 5rem;
+}
+.titleCard{
+    font-family: 'Inconsolata';
+    color: var(--orange-300);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 3rem;
+
+}

@@ -11,10 +11,10 @@ export function Header (){
         <h2> {lastlogo } </h2>
         </div>
         <ul className={style.button}>
-  <li  className={style.li}><a href="#about">About Me</a></li>
+  <li  className={style.li}><a href="#about">Sobre</a></li>
   <li  className={style.li}><a href="#skill">Skill</a></li>
-  <li  className={style.li}><a href="#Projects">Projects</a></li>
-  <li  className={style.li}><a href='#contact'>Contact</a></li>
+  <li  className={style.li}><a href="#Projects">Projetos</a></li>
+  <li  className={style.li}><a href='#contact'>Contato</a></li>
 </ul>
        </header>
        </>
