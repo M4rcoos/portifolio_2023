@@ -13,10 +13,15 @@ import iconCss from "../public/assets/iconCss.svg";
 import iconReact from "../public/assets/iconReact.svg";
 import iconReactNative from "../public/assets/native.png";
 
+
+
 import style from "./App.module.css";
 import "./global.css";
 import { Projects } from "./components/works/Project";
 function App() {
+
+ 
+
   return (
     <div className="App">
       <div className={style.responsive}>

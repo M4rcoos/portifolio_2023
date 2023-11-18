@@ -179,7 +179,10 @@ body{
     
 
 @media (max-width:1200px) {
-   
+    main > .aboutMe {
+       padding: 0;
+    }
+    
   .responsive{
         display: block;
     }

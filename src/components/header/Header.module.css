@@ -1,4 +1,4 @@
-.header{
+.nav{
 color: var(--white);
 display: flex;
 align-items:center ;
@@ -6,15 +6,16 @@ padding: 1.25rem 7.813rem;
 font-family: 'Inconsolata';
 justify-content: space-between;
 }
-.header > .button {
+.nav > .button {
     display: flex;
+    
     gap:8rem;
     list-style-type: none;
 
 }
-.header > .button > li a{
+.nav > .button > li a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--orange-300);
     font-size: 20px;
     font-weight: 700;
 }
@@ -27,17 +28,128 @@ justify-content: space-between;
  color: var(--orange-300);
 
 }
-.header > .logo{
+.nav > .logo{
     display: flex;
     
 }
-.header > .logo h2{
+.nav > .logo h2{
     font-weight: bold;
     font-size: 32px;
 }
-.header > .logo> h2::first-letter{
+.nav > .logo> h2::first-letter{
     color: var(--orange-300);
    
 
 }
 
+@media(max-width:1200px){
+    
+    .button{
+        margin-bottom: 0;
+        display: flex;
+
+     }
+     .li{
+        border-radius: 0.5rem;
+        padding: 0.50rem 0.75rem;
+        transition-duration: 0.5s;
+    
+    }
+}
+@media(max-width:870px){
+    .button{
+        margin-bottom: 0;
+        display: flex;
+        margin-top: 15px;
+       
+     }
+     .li{
+        border-radius: 0.5rem;
+        width:100%;
+        padding: 0.50rem 0.75rem;
+        transition-duration: 0.5s;
+    
+    }
+} 
+.buttonMobile{
+    display: none;
+   }
+   @media (max-width:1100px) {
+    .nav > .button {
+        display: flex;
+        
+        gap:1rem;
+        list-style-type: none;
+    
+    }
+   }
+@media (max-width:815px){
+    .buttonMobile{
+        display: block;
+       }
+    .button{
+        display: block;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+
+        top: 50px;
+        right: 0px;
+        background: var(--gray-200);
+        transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    }
+    .nav.active .button{
+        height: calc(70vh - 72px);
+    visibility: visible;
+    overflow-y: auto;
+    }
+    .button a{
+
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--white);
+        
+    }
+    
+    .buttonMobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+  }
+  .hamburger {
+    border-top: 2px solid;
+    width: 20px;
+   color:var(--white);
+
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background:var(--white);
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+}
