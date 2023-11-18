@@ -55,7 +55,7 @@ export function Projects(this: any, target: Object, propertyName: string) {
       name: "Land Page Info-produto",
       id: 2,
       description: "Landing page criada para cliente Produtora de conteudo na Hotmart",
-      img: "../assets/lp.jpg",
+      img: "../assets/lp.JPG",
       deploy_url: "https://crentona-nota-10.vercel.app/"
     },
     {
