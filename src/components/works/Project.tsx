@@ -52,29 +52,36 @@ export function Projects(this: any, target: Object, propertyName: string) {
       deploy_url: "https://ra-assistencia.vercel.app/"
     },
     {
-      name: "Lista de Participante",
+      name: "Land Page Info-produto",
       id: 2,
+      description: "Landing page criada para cliente Produtora de conteudo na Hotmart",
+      img: "../assets/lp.jpg",
+      deploy_url: "https://crentona-nota-10.vercel.app/"
+    },
+    {
+      name: "Lista de Participante",
+      id: 3,
       description: "Projeto mobile com React Native",
       img: "../assets/mobileLista.png",
       deploy_url: "https://github.com/M4rcoos/ListaParticipantMobile"
     },
      {
       name: "Formulário",
-      id: 0,
+      id: 4,
       description: "Formulário com react",
       img: "../assets/formulario.png",
       deploy_url: "https://formulario-multistep-com-react.vercel.app/"
     },
     {
       name: "Radar do brás",
-      id: 3,
+      id: 5,
       description: "Projeto Mobile para lojas e usúarios do Brás-SP",
       img: "../assets/radar.jpg",
       deploy_url: "https://api.whatsapp.com/send?phone=5511930772498&text=Ol%C3%A1%20Marcos%20tudo%20bem?%0A%0Adei%20uma%20olhada%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20dar%20uma%20olha%20no%20projeto%20do%20Radar%20do%20Br%C3%A1s,%20seria%20poss%C3%ADvel%20me%20mandar%20o%20Apk?"
     },
     {
       name: "ACDM",
-      id: 3,
+      id: 6,
       description: "Pagína Web criada em um treinamento voluntário",
       img: "../assets/acdm.png",
       deploy_url: "https://acdm.vercel.app"

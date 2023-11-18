@@ -20,34 +20,50 @@ function App() {
   return (
     <div className="App">
       <div className={style.responsive}>
-     <div className={style.construction}>      
+        <div className={style.construction}>
 
 
-     </div>
-       <h2>Aplicação para dispositivos menores que 1200 pixels, ainda está em desenvolvimento, tente acessar pelo computador.</h2>
-     </div>
+        </div>
+        <h2>Aplicação para dispositivos menores que 1200 pixels, ainda está em desenvolvimento, tente acessar pelo computador.</h2>
+      </div>
       <main>
-      <Header />
+        <Header />
+        <div className={style.content}>
+
         <section className={style.sectionAbout}>
           <div className={style.aboutWork}>
-            <h1>Marcos vinicius</h1>
-            <h3>Frontend Developer</h3>
+            <div className={style.textoEstatico}>Eu sou:</div>
+            <div className={style.textoDinamico}>
+              <ul>
+                <li><span>Marcos Vinicius</span></li>
+                <li><span>Desenvolvedor</span></li>
+                <li><span>Empreendedor</span></li>
+                <li><span>Musico</span></li>
+              </ul>
+            </div>
+          
+          </div>
+          <div className={style.aboutMe}>
+          <h3>Frontend Developer</h3>
             <p>
               Sou desenvolvedor frontend em busca de ideias e projetos para si e para
                empresas ou terceiros, focado nas tecnologias: react js, react native,
                typescript, node e Asp.net
             </p>
           </div>
-          <div className={style.avatar}>
+          
+        </section>
+        <div className={style.avatar}>
             <img src={avatar} alt="avatar de um homem moreno" />
           </div>
-        </section>
+        </div>
+
         <div className={style.aboutMe} id="about">
           <img src={icon} alt="icone laranja " />
           <p >
-           Desenvolvedor focado em criar aplicações Web e mobile com desing agradável sempre pensando no usuário final.
-           minha maior motivação é desenvolver algo que seja útil no dia a dia das pessoas. 
-           Também tenho uma sólida experiencia com criações de Api com Node js.
+            Desenvolvedor focado em criar aplicações Web e mobile com desing agradável sempre pensando no usuário final.
+            minha maior motivação é desenvolver algo que seja útil no dia a dia das pessoas.
+            Também tenho uma sólida experiencia com criações de Api com Node js.
           </p>
         </div>
         <h3 className={style.titleCard}>My Skills</h3>
