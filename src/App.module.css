@@ -162,7 +162,24 @@ main > .projects{
 body{
     background-color: var(--gray-800);
 }
+
+@media  (max-width:  1520px){
+    main > .content > .sectionAbout{
+        padding: 0;
+    }
+    main > .content > .sectionAbout > .aboutMe p {
+        max-width: 600px;
+    }
+    main >   .content {
+        align-items: center;
+        justify-content: center
+    }
+}
+;
+    
+
 @media (max-width:1200px) {
+   
   .responsive{
         display: block;
     }
