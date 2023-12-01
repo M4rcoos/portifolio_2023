@@ -20,47 +20,42 @@ import "./global.css";
 import { Projects } from "./components/works/Project";
 function App() {
 
- 
+
 
   return (
     <div className="App">
-      <div className={style.responsive}>
-        <div className={style.construction}>
-
-
-        </div>
-        <h2>Aplicação para dispositivos menores que 1200 pixels, ainda está em desenvolvimento, tente acessar pelo computador.</h2>
-      </div>
       <main>
         <Header />
         <div className={style.content}>
 
-        <section className={style.sectionAbout}>
-          <div className={style.aboutWork}>
-            <div className={style.textoEstatico}>Eu sou:</div>
-            <div className={style.textoDinamico}>
-              <ul>
-                <li><span>Marcos Vinicius</span></li>
-                <li><span>Desenvolvedor</span></li>
-                <li><span>Empreendedor</span></li>
-                <li><span>Musico</span></li>
-              </ul>
+          <section className={style.sectionAbout}>
+            <div className={style.description}>
+              <div className={style.aboutWork}>
+                <div className={style.textoEstatico}>Eu sou:</div>
+                <div className={style.textoDinamico}>
+                  <ul>
+                    <li><span>Marcos Vinicius</span></li>
+                    <li><span>Desenvolvedor</span></li>
+                    <li><span>Empreendedor</span></li>
+                    <li><span>Musico</span></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div className={style.aboutMe}>
+                <h3>Frontend Developer</h3>
+                <p>
+                  Sou desenvolvedor frontend em busca de ideias e projetos para si e para
+                  empresas ou terceiros, focado nas tecnologias: react js, react native,
+                  typescript, node e Asp.net
+                </p>
+              </div>
             </div>
-          
-          </div>
-          <div className={style.aboutMe}>
-          <h3>Frontend Developer</h3>
-            <p>
-              Sou desenvolvedor frontend em busca de ideias e projetos para si e para
-               empresas ou terceiros, focado nas tecnologias: react js, react native,
-               typescript, node e Asp.net
-            </p>
-          </div>
-          
-        </section>
-        <div className={style.avatar}>
-            <img src={avatar} alt="avatar de um homem moreno" />
-          </div>
+            <div className={style.avatar}>
+              <img src={avatar} alt="avatar de um homem moreno" />
+            </div>
+          </section>
+
         </div>
 
         <div className={style.aboutMe} id="about">

@@ -1,29 +1,26 @@
-.avatar > img{
 
- height: 500px;
- width: 500px;
-   
-    
-}
 
 main > .content > .sectionAbout {
     display: flex;
-    flex-direction: column;
     align-items: start;
     justify-content: center;
     padding: 95px 114px 120px 122px;
     gap:8rem
-
-
 }
-main > .content >   .sectionAbout > .aboutWork{
+main > .content >   .sectionAbout > .description > .aboutWork{
     display: flex;
     overflow: hidden;
     min-width: 500px;
-    justify-content: center;
     font-family: 'Inconsolata';
 }
-main > .content >   .sectionAbout > .aboutWork > .textoDinamico > ul > li{
+
+main > .content >   .sectionAbout > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+main > .content >   .sectionAbout > .description >.aboutWork > .textoDinamico > ul > li{
   position: relative;
   list-style: none;
   animation: slide 8s steps(4) infinite;
@@ -40,10 +37,10 @@ main > .content >   .sectionAbout > .aboutWork > .textoDinamico > ul > li{
   color: var(--orange-300
   );
 }
-main > .content >   .sectionAbout > .aboutWork > .textoDinamico {
+main > .content >   .sectionAbout > .description > .aboutWork > .textoDinamico {
     height: 60px;
 }
-main > .content >   .sectionAbout > .aboutWork > .textoDinamico > ul > li::after{
+main > .content >   .sectionAbout > .description > .aboutWork > .textoDinamico > ul > li::after{
 content: '';
 position: absolute;
 left:0;
@@ -74,7 +71,7 @@ main >   .content  {
     flex-wrap: wrap;
     align-items: center;
 }
-main >   .content > .sectionAbout > .aboutWork > .textoEstatico {
+main >   .content > .sectionAbout > .description > .aboutWork > .textoEstatico {
     font-weight: 900;
     color: var(--white
     );
@@ -88,38 +85,39 @@ main >   .content > .sectionAbout > .aboutWork > .textoEstatico {
     }
   }
 
-  main >   .content > .sectionAbout > .aboutWork > .textoDinamico > ul > li:nth-last-of-type(1)::after{
+  main >   .content > .sectionAbout > .description > .aboutWork > .textoDinamico > ul > li:nth-last-of-type(1)::after{
 animation-name:typing-short ;
   }
-main > .content > .sectionAbout > .aboutMe h1{
+main > .content > .sectionAbout > .description >.aboutMe h1{
     font-weight: 900;
     color: var(--orange-300
     );
     font-size: 3rem;
     line-height: 4rem;
 }
-main > .content > .sectionAbout > .aboutMe{
+main > .content > .sectionAbout >.description > .aboutMe{
     max-width: 800px;
 }
-main > .content > .sectionAbout > .aboutMe h3{
+main > .content > .sectionAbout > .description > .aboutMe h3{
     color: var(--white);
     font-family: 'Inconsolata';
     font-size: 3rem;
     font-weight: 900;
     line-height: 1.6rem;
     color: var(--white);
+    padding-top: 1rem;
 
 }
-main > .content > .sectionAbout > .aboutMe p{
+main > .content > .sectionAbout > .description > .aboutMe p{
     font-size: 1.25rem;
-    margin-top: 18px;
+    margin-top: 2rem;
     font-family: 'Inconsolata';
     max-width: 904px;
     font-weight: 400;
     line-height: 1.6rem;
     color: var(--white);
 }
-main > .aboutMe {
+main >.description > .aboutMe {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +125,7 @@ main > .aboutMe {
     gap:2rem;
     padding: 4rem 12.563rem;
 }
-main > .aboutMe p{
+main > .description > .aboutMe p{
     font-family: 'Inconsolata';
     max-width: 904px;
     font-size: 1.3rem;
@@ -164,23 +162,49 @@ body{
     background-color: var(--gray-800);
 }
 
-@media  (max-width:  1520px){
-    main > .content > .sectionAbout{
-        padding: 0;
-    }
-    main > .content > .sectionAbout > .aboutMe p {
-        max-width: 600px;
-    }
-    main >   .content {
-        align-items: center;
-        justify-content: center
-    }
+@media  (max-width:  400px){
+ .content > .sectionAbout {
+    display: flex;
+    flex-direction: column-reverse;
+ }
+ main > .content > .sectionAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    gap:0.3rem
+}
+main > .content >   .sectionAbout > .description >.aboutWork > .textoDinamico > ul > li{
+    position: relative;
+    list-style: none;
+    animation: slide 8s steps(4) infinite;
+   
+    color:#fff ;
+    font-weight: 700;
+    top:0;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    color: var(--orange-300
+    );
+  }
+  main >   .content > .sectionAbout > .description > .aboutWork > .textoEstatico {
+    font-weight: 900;
+    color: var(--white
+    );
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+  main >   .content > .sectionAbout > .description > .aboutMe > p {
+    text-align: start;
+    max-width: 300px !important;
+    color: aqua
+ }
 }
 ;
     
 
 @media (max-width:1200px) {
-    main > .aboutMe {
+    main > .description > .aboutMe {
        padding: 0;
     }
     
@@ -215,7 +239,66 @@ body{
         background-color: #000;
     }
 }
-@media (max-width:500px) {
+@media(max-width:870px){
+    main > .content > .sectionAbout {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 0 10px;
+        gap:0.3rem;
+        padding-top:2rem;
+    }
+    main > .content > .sectionAbout > .description > .aboutMe p{
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        font-family: 'Inconsolata';
+        max-width: 504px;
+        font-weight: 400;
+        line-height: 1.6rem;
+        color: var(--white);
+    }
+    main > .content > .sectionAbout > .description > .aboutMe h3{
+        color: var(--white);
+        font-family: 'Inconsolata';
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.6rem;
+        color: var(--white);
+        padding-top: 1rem;
+    
+    }
+    main > .content >   .sectionAbout > .description >.aboutWork > .textoDinamico > ul > li{
+        position: relative;
+        list-style: none;
+        animation: slide 8s steps(4) infinite;
+       
+       
+      
+        color:#fff ;
+        font-weight: 700;
+      
+      
+        top:0;
+        font-size: 2rem;
+        line-height: 4rem;
+        color: var(--orange-300
+        );
+      }
+      main >   .content > .sectionAbout > .description > .aboutWork > .textoEstatico {
+        font-weight: 900;
+        color: var(--white
+        );
+        font-size: 2rem;
+        line-height: 4rem;
+      }
+      @keyframes slide {
+        100%{
+            top: -255px;
+    
+        }
+      }
+}
+/* @media (max-width:500px) {
     .construction{
         background-image: url("/public/assets/gifdev.gif");
         height: 100vh;
@@ -243,4 +326,4 @@ body{
     body{
         background-color: #000;
     }
-}
+} */
