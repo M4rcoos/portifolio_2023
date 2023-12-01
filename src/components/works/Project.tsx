@@ -72,41 +72,40 @@ export function Projects(this: any, target: Object, propertyName: string) {
       deploy_url: "https://projeto-festas-fullstack-6s9h.vercel.app/"
     },
     {
+      name: "landing-Page (Freela)",
+      id:1 ,
+      description: "Landing Page",
+      img: "../assets/parabolas.png",
+      deploy_url: "https://crentenota10.com.br/"
+    },
+    {
       name: "R.A Assistencia Técnica",
-      id: 1,
+      id: 2,
       description: "Projeto feito como freelancer para uma assistência técnica ",
       img: "../assets/assistencia.png",
       deploy_url: "https://ra-assistencia.vercel.app/"
     },
     {
-      name: "Lista de Participante",
-      id: 2,
-      description: "Projeto mobile com React Native",
-      img: "../assets/mobileLista.png",
-      deploy_url: "https://github.com/M4rcoos/ListaParticipantMobile"
-    },
-    {
-      name: "Formulário",
-      id: 0,
-      description: "Formulário com react",
-      img: "../assets/formulario.png",
-      deploy_url: "https://formulario-multistep-com-react.vercel.app/"
-    },
-    {
-      name: "Radar do brás",
+      name: "Radar do brás - Mobile",
       id: 3,
       description: "Projeto Mobile para lojas e usúarios do Brás-SP",
       img: "../assets/radar.jpg",
       deploy_url: "https://api.whatsapp.com/send?phone=5511930772498&text=Ol%C3%A1%20Marcos%20tudo%20bem?%0A%0Adei%20uma%20olhada%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20dar%20uma%20olha%20no%20projeto%20do%20Radar%20do%20Br%C3%A1s,%20seria%20poss%C3%ADvel%20me%20mandar%20o%20Apk?"
     },
     {
-      name: "ACDM",
-      id: 3,
-      description: "Pagína Web criada em um treinamento voluntário",
-      img: "../assets/acdm.png",
-      deploy_url: "https://acdm.vercel.app"
+      name: "Formulário",
+      id: 4,
+      description: "Formulário com react",
+      img: "../assets/formulario.png",
+      deploy_url: "https://formulario-multistep-com-react.vercel.app/"
     },
-   
+    {
+      name: "Finanças",
+      id: 5,
+      description: "Controle de finanças",
+      img: "../assets/financas.png",
+      deploy_url: "https://financas-git-main-m4rcoos.vercel.app/"
+    },
   ]
 
 
@@ -128,7 +127,6 @@ export function Projects(this: any, target: Object, propertyName: string) {
       <Slider {...settings}
 
       >
-
         {
           projects.map(projects => (
             <div className={style.cardProjectContainer}>

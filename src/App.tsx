@@ -82,7 +82,7 @@ function App() {
           <Skills img={iconReactNative} title="React Native" />
         </section>
         <div className={style.projects}>
-          <h3 className={style.titleCard}>Meus trabalhos</h3>
+          <h3 className={style.titleCard}>Alguns dos meus trabalhos</h3>
           <Projects />
         </div>
         <Footer />
